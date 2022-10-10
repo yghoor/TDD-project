@@ -12,4 +12,12 @@ class Solver
     num.times { |i| result *= num - i }
     return result
   end
+
+  def reverse(string)
+    str_array = string.split('')
+    reversed_array = []
+    string.length.times { reversed_array << str_array.pop }
+
+    return reversed_array.join
+  end
 end
