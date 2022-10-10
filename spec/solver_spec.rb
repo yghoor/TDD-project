@@ -28,4 +28,10 @@ describe Solver do
       expect(@solver.factorial(3.2)).to eq('Error: cannot apply factorial to a non-integer value')
     end
   end
+
+  context '#reverse' do
+    it 'takes a string as an argument and returns the string reversed' do
+      expect(@solver.reverse('apple')).to eq('elppa')
+    end
+  end
 end
